@@ -127,11 +127,11 @@ int main(void) {
 
             if (scanf("%d", &gameChoice) == 1) {
                 // Check if input is an integer
-                if (gameChoice == 1) {
+                if (gameChoice != 1) {
                     printf("Game stopped.\n");
                     gameRunning = 0; // Stop the game loop
                     break;
-                } else if (gameChoice == 0) {
+                } else if (gameChoice != 0) {
                     printf("Game continues.\n");
                     break;
                 } else {
